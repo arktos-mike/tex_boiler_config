@@ -40,9 +40,9 @@ mb_internal_encoding("UTF-8");
     $mail->SMTPDebug = 1;         
     $mail->isSMTP(); // using SMTP protocol  
     $mail->CharSet = "utf-8";
-    $mail->Host = 'smtp..ru'; // SMTP host as gmail 
+    $mail->Host = 'smtp.yandex.ru'; // SMTP host as gmail 
     $mail->SMTPAuth = true;  // enable smtp authentication                             
-    $mail->Username = 'config@.ru';  // sender gmail host              
+    $mail->Username = 'config@gkta.ru';  // sender gmail host              
     $mail->Password = ''; // sender gmail host password                          
     
     $mail->SMTPSecure = 'tls';  // for encrypted connection                           
@@ -55,7 +55,7 @@ mb_internal_encoding("UTF-8");
     )
 );
     $mail->setFrom($email, $name); // sender's email and name
-    $mail->addAddress('config@.ru', "ТЭКС-Автоматик");  // receiver's email and name
+    $mail->addAddress('config@gkta.ru', "ТЭКС-Автоматик");  // receiver's email and name
     
     $mail->isHTML(true);
     $mail->Subject = 'Создана новая конфигурация котла на сайте';
@@ -74,9 +74,9 @@ $mail = new PHPMailer(true);
     $mail->SMTPDebug = 2;
     $mail->isSMTP(); // using SMTP protocol      
     $mail->CharSet = "utf-8";
-    $mail->Host = 'smtp..ru'; // SMTP host as gmail 
+    $mail->Host = 'smtp.yandex.ru'; // SMTP host as gmail 
     $mail->SMTPAuth = true;  // enable smtp authentication                             
-    $mail->Username = 'config@.ru';  // sender gmail host              
+    $mail->Username = 'config@gkta.ru';  // sender gmail host              
     $mail->Password = ''; // sender gmail host password                          
     $mail->SMTPSecure = 'tls'; // for encrypted connection                           
     $mail->Port = 587;   // port for SMTP     
@@ -87,7 +87,7 @@ $mail = new PHPMailer(true);
         'allow_self_signed' => true
     )
 );
-    $mail->setFrom('config@.ru', "ТЭКС-Автоматик"); // sender's email and name
+    $mail->setFrom('config@gkta.ru', "ТЭКС-Автоматик"); // sender's email and name
     $mail->addAddress($email, $name);  // receiver's email and name
     
     $mail->isHTML(true);
